@@ -1,9 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { ExternalLink, Github, Play } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
@@ -87,17 +85,6 @@ const Projects = () => {
                       </li>
                     ))}
                   </ul>
-                </div>
-
-                <div className="flex space-x-3 pt-4">
-                  <Button size="sm" className="bg-tech-blue hover:bg-blue-600">
-                    <Github className="mr-2" size={16} />
-                    View Code
-                  </Button>
-                  <Button size="sm" variant="outline" className="border-tech-teal text-tech-teal hover:bg-tech-teal hover:text-white">
-                    <Play className="mr-2" size={16} />
-                    Live Demo
-                  </Button>
                 </div>
               </CardContent>
             </Card>
