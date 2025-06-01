@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ChevronDown, Github, Linkedin, Mail, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -8,6 +7,23 @@ const Hero = () => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleResumeDownload = () => {
+    try {
+      // Create a link element and trigger download
+      const link = document.createElement('a');
+      link.href = '/Kishore Rayudu Resume.pdf';
+      link.download = 'Kishore_Rayudu_Resume.pdf';
+      link.target = '_blank';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Resume download failed:', error);
+      // Fallback: try to open in new tab
+      window.open('/Kishore Rayudu Resume.pdf', '_blank');
     }
   };
 
@@ -35,14 +51,14 @@ const Hero = () => {
             View My Work
           </Button>
           <Button 
-  size="lg" 
-  variant="outline" 
-  className="border-tech-teal text-tech-teal hover:bg-tech-teal hover:text-white px-8 py-3 text-lg"
-  onClick={() => window.open('/Kishore Rayudu Resume.pdf', '_blank')}
->
-  <Download className="mr-2" size={20} />
-  Download Resume
-</Button>
+            size="lg" 
+            variant="outline" 
+            className="border-tech-teal text-tech-teal hover:bg-tech-teal hover:text-white px-8 py-3 text-lg"
+            onClick={handleResumeDownload}
+          >
+            <Download className="mr-2" size={20} />
+            Download Resume
+          </Button>
         </div>
 
         <div className="flex justify-center space-x-6 mb-12">
