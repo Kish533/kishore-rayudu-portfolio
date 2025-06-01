@@ -35,13 +35,14 @@ const Hero = () => {
             View My Work
           </Button>
           <Button 
-            size="lg" 
-            variant="outline" 
-            className="border-tech-teal text-tech-teal hover:bg-tech-teal hover:text-white px-8 py-3 text-lg"
-          >
-            <Download className="mr-2" size={20} />
-            Download Resume
-          </Button>
+  size="lg" 
+  variant="outline" 
+  className="border-tech-teal text-tech-teal hover:bg-tech-teal hover:text-white px-8 py-3 text-lg"
+  onClick={() => window.open('/Kishore Rayudu Resume.pdf', '_blank')}
+>
+  <Download className="mr-2" size={20} />
+  Download Resume
+</Button>
         </div>
 
         <div className="flex justify-center space-x-6 mb-12">
