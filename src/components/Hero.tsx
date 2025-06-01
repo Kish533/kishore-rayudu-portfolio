@@ -14,7 +14,7 @@ const Hero = () => {
     try {
       // Create a link element and trigger download
       const link = document.createElement('a');
-      link.href = '/Kishore Rayudu Resume.pdf';
+      link.href = '/Kishore_Rayudu_Resume.pdf';
       link.download = 'Kishore_Rayudu_Resume.pdf';
       link.target = '_blank';
       document.body.appendChild(link);
