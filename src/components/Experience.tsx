@@ -185,7 +185,7 @@ const Experience = () => {
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
           <Card className="glass border-gray-700">
             <CardHeader>
-              <CardTitle className="text-white">Certifications</CardTitle>
+              <CardTitle className="text-tech-orange">Certifications</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-3">
@@ -201,7 +201,7 @@ const Experience = () => {
 
           <Card className="glass border-gray-700">
             <CardHeader>
-              <CardTitle className="text-white">Quick Stats</CardTitle>
+              <CardTitle className="text-tech-purple">Quick Stats</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="text-center">

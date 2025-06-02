@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { ChevronDown, Github, Linkedin, Mail, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -31,6 +33,18 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center relative px-4 pt-20">
       <div className="max-w-4xl mx-auto text-center animate-fade-in">
         <div className="mb-8">
+          {/* Professional Photo */}
+          <div className="mb-8 flex justify-center">
+            <Avatar className="w-32 h-32 md:w-40 md:h-40 border-4 border-tech-blue shadow-2xl">
+              <AvatarImage 
+                src="/lovable-uploads/ef45e7e6-7c94-4f4c-8198-51415e4ad60c.png" 
+                alt="Kishore Rayudu - QA Automation Engineer"
+                className="object-cover"
+              />
+              <AvatarFallback className="text-2xl bg-tech-blue text-white">KR</AvatarFallback>
+            </Avatar>
+          </div>
+          
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <span className="gradient-text">Test Automation</span>
             <br />
