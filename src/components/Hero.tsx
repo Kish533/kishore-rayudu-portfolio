@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ChevronDown, Github, Linkedin, Mail, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -12,9 +11,9 @@ const Hero = () => {
     }
   };
 
+  // ...existing handlers...
   const handleResumeDownload = () => {
     try {
-      // Create a link element and trigger download
       const link = document.createElement('a');
       link.href = '/Kishore_Rayudu_Resume.pdf';
       link.download = 'Kishore_Rayudu_Resume.pdf';
@@ -24,7 +23,6 @@ const Hero = () => {
       document.body.removeChild(link);
     } catch (error) {
       console.error('Resume download failed:', error);
-      // Show a user-friendly message
       alert('Resume download is not available at the moment. Please contact me directly.');
     }
   };
@@ -53,8 +51,8 @@ const Hero = () => {
           <div className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto space-y-4">
             <p>
               Architecting scalable, Java-based automation frameworks that support rapid development and deliver consistent product quality. Skilled in Selenium, Appium, API testing and Database testing with seamless CI/CD integration. Committed to replacing manual QA efforts with robust automation strategies 
-              that streamline workflows and elevate test coverage.  </p>
-           
+              that streamline workflows and elevate test coverage.
+            </p>
           </div>
         </div>
 
@@ -78,6 +76,7 @@ const Hero = () => {
         </div>
 
         <div className="flex justify-center space-x-6 mb-12">
+          {/* Existing HoverCards for GitHub, LinkedIn, Email */}
           <HoverCard>
             <HoverCardTrigger asChild>
               <Button 
@@ -130,15 +129,42 @@ const Hero = () => {
           </HoverCard>
         </div>
 
+        {/* Updated Skills Section with HoverCard */}
         <div className="animate-bounce">
-          <Button 
-            variant="ghost" 
-            size="icon"
-            onClick={() => scrollToSection('skills')}
-            className="hover:text-tech-blue"
-          >
-            <ChevronDown size={32} />
-          </Button>
+          <HoverCard>
+            <HoverCardTrigger asChild>
+              <Button 
+                variant="ghost" 
+                size="icon"
+                onClick={() => scrollToSection('skills')}
+                className="hover:text-tech-blue"
+              >
+                <ChevronDown size={32} />
+              </Button>
+            </HoverCardTrigger>
+            <HoverCardContent className="w-80 p-4 bg-gray-800/95 border-gray-600 backdrop-blur-sm">
+              <div className="space-y-3">
+                <h4 className="text-sm font-semibold text-tech-blue">Core Skills Overview</h4>
+                <div className="grid grid-cols-2 gap-2 text-xs text-gray-300">
+                  <div className="space-y-1">
+                    <p>• Selenium WebDriver</p>
+                    <p>• Java / TestNG</p>
+                    <p>• REST API Testing</p>
+                    <p>• Cucumber BDD</p>
+                  </div>
+                  <div className="space-y-1">
+                    <p>• Appium Mobile</p>
+                    <p>• CI/CD Pipeline</p>
+                    <p>• Database Testing</p>
+                    <p>• Test Architecture</p>
+                  </div>
+                </div>
+                <p className="text-[11px] text-tech-teal italic mt-2 text-center">
+                  Click to explore full skillset →
+                </p>
+              </div>
+            </HoverCardContent>
+          </HoverCard>
         </div>
       </div>
 
