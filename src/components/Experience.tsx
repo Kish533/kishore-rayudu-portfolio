@@ -205,12 +205,16 @@ const Experience = () => {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="text-center">
-                <div className="text-3xl font-bold gradient-text">9+</div>
+                <div className="text-3xl font-bold gradient-text">8+</div>
                 <div className="text-gray-300">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold gradient-text">50+</div>
-                <div className="text-gray-300">Projects Completed</div>
+                <div className="text-3xl font-bold gradient-text">10+</div>
+                <div className="text-gray-300">Developed Automation Frameworks</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold gradient-text">5000+</div>
+                <div className="text-gray-300">Test Cases Migrated</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold gradient-text">90%</div>

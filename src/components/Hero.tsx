@@ -52,17 +52,9 @@ const Hero = () => {
           </h1>
           <div className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto space-y-4">
             <p>
-              Crafting robust automation frameworks with Java, Python, and JavaScript. 
-              Specializing in Selenium, Appium, API testing, and comprehensive QA solutions.
-            </p>
-            <p>
-              Expert in designing scalable test architectures, implementing CI/CD pipelines, 
-              and delivering high-quality software through innovative testing strategies.
-            </p>
-            <p>
-              Passionate about transforming manual processes into efficient automated workflows 
-              that accelerate development cycles and ensure exceptional product reliability.
-            </p>
+              Architecting scalable, Java-based automation frameworks that support rapid development and deliver consistent product quality. Skilled in Selenium, Appium, and API testing with seamless CI/CD integration. Committed to replacing manual QA efforts with robust automation strategies 
+              that streamline workflows and elevate test coverage.  </p>
+           
           </div>
         </div>
 
