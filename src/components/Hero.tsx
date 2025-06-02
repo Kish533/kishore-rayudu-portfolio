@@ -22,8 +22,8 @@ const Hero = () => {
       document.body.removeChild(link);
     } catch (error) {
       console.error('Resume download failed:', error);
-      // Fallback: try to open in new tab
-      window.open('/Kishore Rayudu Resume.pdf', '_blank');
+      // Show a user-friendly message
+      alert('Resume download is not available at the moment. Please contact me directly.');
     }
   };
 
