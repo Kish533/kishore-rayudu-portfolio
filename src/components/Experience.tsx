@@ -122,9 +122,9 @@ const Experience = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
           {/* Experience Timeline */}
-          <div className="lg:col-span-2 space-y-8">
+          <div className="space-y-8">
             {experiences.map((exp, index) => (
               <Card 
                 key={exp.title}

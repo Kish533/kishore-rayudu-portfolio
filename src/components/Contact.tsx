@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -47,6 +48,7 @@ const Contact = () => {
       const templateParams = {
         from_name: formData.name,
         from_email: formData.email,
+        reply_to: formData.email,
         to_email: EMAIL_CONFIG.TO_EMAIL,
         subject: formData.subject,
         message: formData.message,
