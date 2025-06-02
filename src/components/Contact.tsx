@@ -6,9 +6,17 @@ import { Textarea } from '@/components/ui/textarea';
 import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
-// Social media links
+// Constants
 const GITHUB_URL = "https://github.com/Kish533";
 const LINKEDIN_URL = "https://www.linkedin.com/in/kishore-rayudu-qa";
+
+// EmailJS Configuration
+const EMAIL_CONFIG = {
+  SERVICE_ID: 'service_e1kxl6g',
+  TEMPLATE_ID: 'template_3ejmqz8',
+  PUBLIC_KEY: 'MTcU0R5ZeRJObYXgu',
+  TO_EMAIL: 'kishorerayuduqa@gmail.com'
+};
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -20,7 +28,7 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
-    emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!);
+    emailjs.init(EMAIL_CONFIG.PUBLIC_KEY);
   }, []);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -39,15 +47,15 @@ const Contact = () => {
       const templateParams = {
         from_name: formData.name,
         from_email: formData.email,
-        to_email: process.env.NEXT_PUBLIC_TO_EMAIL,
+        to_email: EMAIL_CONFIG.TO_EMAIL,
         subject: formData.subject,
         message: formData.message,
         to_name: 'Kishore',
       };
 
       const response = await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        EMAIL_CONFIG.SERVICE_ID,
+        EMAIL_CONFIG.TEMPLATE_ID,
         templateParams
       );
 
@@ -94,7 +102,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="text-gray-300">Email</div>
-                    <div className="text-white">kishorerayuduqa@gmail.com</div>
+                    <div className="text-white">{EMAIL_CONFIG.TO_EMAIL}</div>
                   </div>
                 </div>
                 
