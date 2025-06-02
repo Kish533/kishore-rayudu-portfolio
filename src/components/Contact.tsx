@@ -1,10 +1,14 @@
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react';
+import emailjs from '@emailjs/browser';
+
+// Social media links
+const GITHUB_URL = "https://github.com/Kish533";
+const LINKEDIN_URL = "https://www.linkedin.com/in/kishore-rayudu-qa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +17,11 @@ const Contact = () => {
     subject: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  useEffect(() => {
+    emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!);
+  }, []);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -22,10 +31,41 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Handle form submission logic here
+    setIsSubmitting(true);
+
+    try {
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        to_email: process.env.NEXT_PUBLIC_TO_EMAIL,
+        subject: formData.subject,
+        message: formData.message,
+        to_name: 'Kishore',
+      };
+
+      const response = await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        templateParams
+      );
+
+      if (response.status === 200) {
+        alert('Message sent successfully! I will get back to you soon.');
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Failed to send message. Please try again or email me directly.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -85,11 +125,19 @@ const Contact = () => {
                 <CardTitle className="text-white">Social Links</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
-                <Button variant="ghost" className="w-full justify-start text-gray-300 hover:text-tech-blue">
+                <Button
+                  variant="ghost"
+                  className="w-full justify-start text-gray-300 hover:text-tech-blue"
+                  onClick={() => window.open(GITHUB_URL, '_blank')}
+                >
                   <Github className="mr-3" size={20} />
                   GitHub Portfolio
                 </Button>
-                <Button variant="ghost" className="w-full justify-start text-gray-300 hover:text-tech-teal">
+                <Button
+                  variant="ghost"
+                  className="w-full justify-start text-gray-300 hover:text-tech-teal"
+                  onClick={() => window.open(LINKEDIN_URL, '_blank')}
+                >
                   <Linkedin className="mr-3" size={20} />
                   LinkedIn Profile
                 </Button>
@@ -115,6 +163,7 @@ const Contact = () => {
                         className="bg-gray-800 border-gray-600 text-white focus:border-tech-blue"
                         placeholder="Your Name"
                         required
+                        disabled={isSubmitting}
                       />
                     </div>
                     <div>
@@ -127,6 +176,7 @@ const Contact = () => {
                         className="bg-gray-800 border-gray-600 text-white focus:border-tech-blue"
                         placeholder="your.email@example.com"
                         required
+                        disabled={isSubmitting}
                       />
                     </div>
                   </div>
@@ -140,6 +190,7 @@ const Contact = () => {
                       className="bg-gray-800 border-gray-600 text-white focus:border-tech-blue"
                       placeholder="What's this about?"
                       required
+                      disabled={isSubmitting}
                     />
                   </div>
                   
@@ -152,15 +203,29 @@ const Contact = () => {
                       className="bg-gray-800 border-gray-600 text-white focus:border-tech-blue min-h-[120px]"
                       placeholder="Tell me about your project or ask any questions..."
                       required
+                      disabled={isSubmitting}
                     />
                   </div>
                   
                   <Button 
                     type="submit" 
                     className="w-full bg-tech-blue hover:bg-blue-600 text-white py-3 animate-glow"
+                    disabled={isSubmitting}
                   >
-                    <Send className="mr-2" size={20} />
-                    Send Message
+                    {isSubmitting ? (
+                      <span className="flex items-center justify-center">
+                        <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        Sending...
+                      </span>
+                    ) : (
+                      <>
+                        <Send className="mr-2" size={20} />
+                        Send Message
+                      </>
+                    )}
                   </Button>
                 </form>
               </CardContent>
@@ -168,10 +233,9 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Footer */}
         <div className="text-center mt-16 pt-8 border-t border-gray-700">
           <p className="text-gray-400">
-            © 2024 QA Automation Wizard. Crafted with precision and passion for quality.
+            © {new Date().getFullYear()} QA Automation Wizard. Crafted with precision and passion for quality.
           </p>
         </div>
       </div>
