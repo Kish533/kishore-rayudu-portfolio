@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -211,7 +210,7 @@ const Contact = () => {
                       value={formData.message}
                       onChange={handleInputChange}
                       className="bg-gray-800 border-gray-600 text-white focus:border-tech-blue min-h-[120px]"
-                      placeholder="Tell me about your project or ask any questions..."
+                      placeholder="Provide job description or ask any questions..."
                       required
                       disabled={isSubmitting}
                     />

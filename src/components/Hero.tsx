@@ -2,7 +2,7 @@
 import React from 'react';
 import { ChevronDown, Github, Linkedin, Mail, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card';
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -29,31 +29,41 @@ const Hero = () => {
     }
   };
 
+  const handleGitHubClick = () => {
+    window.open('https://github.com/Kish533', '_blank');
+  };
+
+  const handleLinkedInClick = () => {
+    window.open('https://www.linkedin.com/in/kishore-rayudu-qa', '_blank');
+  };
+
+  const handleEmailClick = () => {
+    scrollToSection('contact');
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center relative px-4 pt-20">
       <div className="max-w-4xl mx-auto text-center animate-fade-in">
         <div className="mb-8">
-          {/* Professional Photo */}
-          <div className="mb-8 flex justify-center">
-            <Avatar className="w-32 h-32 md:w-40 md:h-40 border-4 border-tech-blue shadow-2xl">
-              <AvatarImage 
-                src="/lovable-uploads/ef45e7e6-7c94-4f4c-8198-51415e4ad60c.png" 
-                alt="Kishore Rayudu - QA Automation Engineer"
-                className="object-cover"
-              />
-              <AvatarFallback className="text-2xl bg-tech-blue text-white">KR</AvatarFallback>
-            </Avatar>
-          </div>
-          
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <span className="gradient-text">Test Automation</span>
             <br />
             <span className="text-white">Wizard</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            Crafting robust automation frameworks with Java, Python, and JavaScript. 
-            Specializing in Selenium, Appium, API testing, and comprehensive QA solutions.
-          </p>
+          <div className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto space-y-4">
+            <p>
+              Crafting robust automation frameworks with Java, Python, and JavaScript. 
+              Specializing in Selenium, Appium, API testing, and comprehensive QA solutions.
+            </p>
+            <p>
+              Expert in designing scalable test architectures, implementing CI/CD pipelines, 
+              and delivering high-quality software through innovative testing strategies.
+            </p>
+            <p>
+              Passionate about transforming manual processes into efficient automated workflows 
+              that accelerate development cycles and ensure exceptional product reliability.
+            </p>
+          </div>
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">
@@ -76,15 +86,56 @@ const Hero = () => {
         </div>
 
         <div className="flex justify-center space-x-6 mb-12">
-          <Button variant="ghost" size="icon" className="hover:text-tech-blue">
-            <Github size={24} />
-          </Button>
-          <Button variant="ghost" size="icon" className="hover:text-tech-teal">
-            <Linkedin size={24} />
-          </Button>
-          <Button variant="ghost" size="icon" className="hover:text-tech-purple">
-            <Mail size={24} />
-          </Button>
+          <HoverCard>
+            <HoverCardTrigger asChild>
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="hover:text-tech-blue"
+                onClick={handleGitHubClick}
+              >
+                <Github size={24} />
+              </Button>
+            </HoverCardTrigger>
+            <HoverCardContent className="w-auto p-2 bg-gray-800 border-gray-600">
+              <p className="text-sm text-white">https://github.com/Kish533</p>
+            </HoverCardContent>
+          </HoverCard>
+
+          <HoverCard>
+            <HoverCardTrigger asChild>
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="hover:text-tech-teal"
+                onClick={handleLinkedInClick}
+              >
+                <Linkedin size={24} />
+              </Button>
+            </HoverCardTrigger>
+            <HoverCardContent className="w-auto p-2 bg-gray-800 border-gray-600">
+              <p className="text-sm text-white">https://www.linkedin.com/in/kishore-rayudu-qa</p>
+            </HoverCardContent>
+          </HoverCard>
+
+          <HoverCard>
+            <HoverCardTrigger asChild>
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="hover:text-tech-purple"
+                onClick={handleEmailClick}
+              >
+                <Mail size={24} />
+              </Button>
+            </HoverCardTrigger>
+            <HoverCardContent className="w-auto p-3 bg-gray-800 border-gray-600">
+              <div className="text-sm text-white space-y-1">
+                <p>kishorerayuduqa@gmail.com</p>
+                <p>+1 (469)-525-3629</p>
+              </div>
+            </HoverCardContent>
+          </HoverCard>
         </div>
 
         <div className="animate-bounce">
