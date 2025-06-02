@@ -95,7 +95,7 @@ const Contact = () => {
           <div className="lg:col-span-1 space-y-6">
             <Card className="glass border-gray-700">
               <CardHeader>
-                <CardTitle className="text-white">Get In Touch</CardTitle>
+                <CardTitle className="text-tech-blue">Get In Touch</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-center space-x-3">
@@ -132,7 +132,7 @@ const Contact = () => {
 
             <Card className="glass border-gray-700">
               <CardHeader>
-                <CardTitle className="text-white">Social Links</CardTitle>
+                <CardTitle className="text-tech-teal">Social Links</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
                 <Button
@@ -159,7 +159,7 @@ const Contact = () => {
           <div className="lg:col-span-2">
             <Card className="glass border-gray-700">
               <CardHeader>
-                <CardTitle className="text-white">Send a Message</CardTitle>
+                <CardTitle className="text-tech-purple">Send a Message</CardTitle>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
