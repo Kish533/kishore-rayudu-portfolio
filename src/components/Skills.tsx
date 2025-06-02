@@ -52,10 +52,10 @@ const Skills = () => {
       title: 'Cloud & DevOps',
       icon: <Cloud className="w-6 h-6" />,
       skills: [
-        { name: 'AZURE', level: 80 },
+        { name: 'AZURE', level: 85 },
         { name: 'AWS', level: 80 },
         { name: 'Jenkins', level: 85 },
-        { name: 'Docker', level: 75 }
+        { name: 'CI/CD', level: 85 }
       ],
       color: 'tech-blue'
     },
