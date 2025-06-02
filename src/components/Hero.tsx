@@ -52,7 +52,7 @@ const Hero = () => {
           </h1>
           <div className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto space-y-4">
             <p>
-              Architecting scalable, Java-based automation frameworks that support rapid development and deliver consistent product quality. Skilled in Selenium, Appium, and API testing with seamless CI/CD integration. Committed to replacing manual QA efforts with robust automation strategies 
+              Architecting scalable, Java-based automation frameworks that support rapid development and deliver consistent product quality. Skilled in Selenium, Appium, API testing and Database testing with seamless CI/CD integration. Committed to replacing manual QA efforts with robust automation strategies 
               that streamline workflows and elevate test coverage.  </p>
            
           </div>
