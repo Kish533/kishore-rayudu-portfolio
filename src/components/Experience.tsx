@@ -8,50 +8,106 @@ const Experience = () => {
   const experiences = [
     {
       title: 'Senior QA Automation Engineer',
-      company: 'Tech Solutions Inc.',
-      location: 'San Francisco, CA',
-      period: '2022 - Present',
+      company: 'State Farm',
+      location: 'McKinney, TX',
+      period: 'May 2025 - Present',
       achievements: [
-        'Led automation initiatives reducing testing time by 60%',
+        'Developed modular automation frameworks using Selenium, Appium, TestNG, and Java',
         'Implemented CI/CD pipelines with Jenkins and GitHub Actions',
-        'Mentored junior QA engineers on automation best practices',
-        'Designed and executed comprehensive test strategies for microservices'
+        'Tested REST APIs using Postman; validated backend data with SQL',
+        'Participated in Agile ceremonies; mentored juniors; improved QA best practices'
       ],
-      technologies: ['Java', 'Selenium', 'TestNG', 'Jenkins', 'AWS', 'Docker']
+      technologies: ['Java', 'Selenium WebDriver', 'Serenity BDD', 'Appium', 'IOS', 'Android', 'JIRA', 'Zephyr', 'Cucumber','Agile', 'IntelliJ', 'Maven', 'Jenkins', 'CI/CD','Jenkins', 'Git', 'BDD', 'Browser Stack', 'DBeaver']
     },
     {
       title: 'QA Automation Engineer',
-      company: 'Digital Innovations Corp',
-      location: 'Austin, TX',
-      period: '2020 - 2022',
+      company: 'CVS',
+      location: 'Irving, TX',
+      period: 'Nov 2024 - April 2025',
       achievements: [
-        'Developed robust API testing framework using Rest Assured',
-        'Implemented mobile testing automation with Appium',
-        'Integrated automated tests with JIRA and Azure DevOps',
-        'Achieved 85% test automation coverage across web and mobile platforms'
-      ],
-      technologies: ['Python', 'Selenium', 'Appium', 'Rest Assured', 'Azure DevOps']
-    },
-    {
-      title: 'QA Engineer',
-      company: 'StartupTech LLC',
-      location: 'Denver, CO',
-      period: '2018 - 2020',
-      achievements: [
-        'Established QA processes and testing standards from ground up',
+      'Established QA processes and testing standards from ground up',
         'Created comprehensive test documentation and test cases',
         'Performed manual and automated testing for web applications',
         'Collaborated with cross-functional teams in Agile environment'
+      ],      
+      technologies: ['Java', 'Selenium WebDriver', 'Serenity BDD', 'Appium', 'IOS', 'Android', 'JIRA', 'Zephyr', 'Cucumber','Agile', 'IntelliJ', 'Maven', 'Jenkins', 'CI/CD','Jenkins', 'Git', 'BDD', 'Browser Stack', 'DBeaver']
+    },
+     {
+      title: 'Sr.  Automation Test Engineer',
+      company: 'Anthem',
+      location: ' Plano, TX',
+      period: 'Sep 2023 - Aug 2024',
+      achievements: [
+        'Developed test automation frameworks using Selenium, Appium, TestNG, and Maven',
+        'Configured Azure CI/CD pipeline for automated test execution and integration',
+        'Created scalable mobile automation framework for Android, iOS, and hybrid',
+        'Collaborated with development teams to resolve bugs and improve testing',
+        'Designed comprehensive test plans and cases using Jira and JBehave',
+        'Enhanced automation scripts to improve efficiency and expand test coverage',
+        'Executed manual and automated tests ensuring quality and functionality',
+        'Collaborated in Agile teams to refine requirements and improve processes'
       ],
-      technologies: ['JavaScript', 'Selenium IDE', 'Postman', 'JIRA', 'MySQL']
+      technologies: ['Java', 'Selenium WebDriver', 'Serenity BDD', 'Appium', 'emulator', 'simulator', 'IOS', 'Android', 'JIRA', 'Zephyr', 'Cucumber', 'Agile', 'IntelliJ', 'Maven', 'Jenkins', 'CI/CD', 'Jenkins', 'Git', 'BDD', 'Browser Stack', 'DBeaver', 'Saviynt'
+]
+ },
+ {
+      title: 'Sr. Software Test Engineer',
+      company: 'Inovalon',
+      location: ' Bowie, MD',
+      period: 'Mar 2023 - Aug 2023',
+      achievements: [
+        'Reviewed requirements, participated in sprint planning, stand-ups, and Scrum ceremonies',
+        'Developed end-to-end test cases within Agile software development lifecycle',
+        'Implemented Data-Driven Framework using POM; integrated Apache POI for testing',
+        'Tracked defects in JIRA, collaborated with development teams for resolution'
+      ],
+      technologies: ['Java', 'Selenium WebDriver', 'Serenity BDD', 'Appium', 'emulator', 'simulator', 'IOS', 'Android', 'JIRA', 'Zephyr', 'Cucumber', 'Agile', 'IntelliJ', 'Maven', 'Jenkins', 'CI/CD', 'Jenkins', 'Git', 'BDD', 'Browser Stack', 'DBeaver', 'Saviynt'
+]
+ },
+    {
+      title: 'Sr. Associate - Software Services',
+      company: 'Freyr Solutions',
+      location: 'Princeton, NJ',
+      period: 'Feb 2021 - Feb 2023',
+      achievements: [
+        'Developed test automation frameworks using Selenium, Appium, TestNG, and Maven',
+        'Configured Azure CI/CD pipeline for automated test execution and integration',
+        'Created scalable mobile automation framework for Android, iOS, and hybrid',
+        'Collaborated with development teams to resolve bugs and improve testing',
+        'Designed comprehensive test plans and cases using Jira and JBehave',
+        'Enhanced automation scripts to improve efficiency and expand test coverage',
+        'Executed manual and automated tests ensuring quality and functionality',
+        'Collaborated in Agile teams to refine requirements and improve processes'
+      ],
+      technologies: ['Java', 'Selenium WebDriver', 'Serenity BDD', 'Appium', 'emulator', 'simulator', 'IOS', 'Android', 'JIRA', 'Zephyr', 'Cucumber', 'Agile', 'IntelliJ', 'Maven', 'Jenkins', 'CI/CD', 'Jenkins', 'Git', 'BDD', 'Browser Stack', 'DBeaver', 'Saviynt'
+]
+    },
+    {
+      title: 'Sr.  Automation Test Engineer',
+      company: 'Unilog',
+      location: 'Wayne, PA',
+      period: 'Aug 2016 - Nov 2020',
+      achievements: [
+        'Developed test automation frameworks using Selenium, Appium, TestNG, and Maven',
+        'Configured Azure CI/CD pipeline for automated test execution and integration',
+        'Created scalable mobile automation framework for Android, iOS, and hybrid',
+        'Collaborated with development teams to resolve bugs and improve testing',
+        'Designed comprehensive test plans and cases using Jira and JBehave',
+        'Enhanced automation scripts to improve efficiency and expand test coverage',
+        'Executed manual and automated tests ensuring quality and functionality',
+        'Collaborated in Agile teams to refine requirements and improve processes'
+      ],
+      technologies: ['Selenium WebDriver', 'Eclipse', 'Postman', 'Java', 'TestNG', 'SQL', 'Jira', 'Jenkins', 'GIT', 'Maven', 'TestNG'
+]
     }
   ];
 
   const certifications = [
-    'ISTQB Certified Tester',
-    'AWS Cloud Practitioner',
-    'Scrum Master Certified',
-    'Selenium WebDriver Expert'
+    'ISTQB Certified Tester – Advanced Level Test Automation Engineer (CTAL-TAE)',
+    'ISTQB Foundation Level Certification (CTFL)',
+    'AWS Certified Developer – Associate',
+    'Azure Administrator Associate',
+    'Lean Six Sigma – Certified White Belt'
   ];
 
   return (

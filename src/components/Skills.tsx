@@ -11,29 +11,30 @@ const Skills = () => {
       icon: <Code className="w-6 h-6" />,
       skills: [
         { name: 'Java', level: 95 },
-        { name: 'Python', level: 90 },
-        { name: 'JavaScript', level: 85 },
+        { name: 'Python', level: 85 },
+        { name: 'JavaScript', level: 80 },
       ],
       color: 'tech-blue'
     },
     {
-      title: 'Automation Frameworks',
+      title: 'Automation Tools',
       icon: <TestTube className="w-6 h-6" />,
       skills: [
         { name: 'Selenium WebDriver', level: 95 },
-        { name: 'TestNG', level: 90 },
-        { name: 'Cucumber BDD', level: 88 },
-        { name: 'Rest Assured', level: 92 }
+        { name: 'TestNG', level: 95 },
+        { name: 'Cucumber BDD', level: 95 },
+        { name: 'Appium', level: 85 },
+        { name: 'Rest Assured', level: 80 }
       ],
       color: 'tech-teal'
     },
     {
-      title: 'Mobile & API Testing',
+      title: 'API Testing',
       icon: <Smartphone className="w-6 h-6" />,
       skills: [
-        { name: 'Appium', level: 85 },
+        { name: 'HTTP Requests', level: 95 },
         { name: 'Postman', level: 90 },
-        { name: 'API Testing', level: 92 }
+        { name: 'Swagger', level: 92 }
       ],
       color: 'tech-purple'
     },
@@ -42,7 +43,7 @@ const Skills = () => {
       icon: <Database className="w-6 h-6" />,
       skills: [
         { name: 'MySQL', level: 85 },
-        { name: 'PostgreSQL', level: 82 },
+        { name: 'PostgreSQL', level: 80 },
         { name: 'Oracle', level: 80 }
       ],
       color: 'tech-orange'
@@ -51,6 +52,7 @@ const Skills = () => {
       title: 'Cloud & DevOps',
       icon: <Cloud className="w-6 h-6" />,
       skills: [
+        { name: 'AZURE', level: 80 },
         { name: 'AWS', level: 80 },
         { name: 'Jenkins', level: 85 },
         { name: 'Docker', level: 75 }
@@ -58,13 +60,27 @@ const Skills = () => {
       color: 'tech-blue'
     },
     {
+      title: 'Automation Frameworks',
+      icon: <TestTube className="w-6 h-6" />,
+      skills: [
+        { name: 'Keyword Driven', level: 95 },
+        { name: 'Data Driven', level: 95 },
+        { name: 'BDD', level: 95 },
+        { name: 'Serenity', level: 85 }
+      ],
+      color: 'tech-teal'
+    },
+    {
       title: 'Tools & IDEs',
       icon: <Settings className="w-6 h-6" />,
       skills: [
+        { name: 'Eclipse', level: 95 },
         { name: 'IntelliJ IDEA', level: 90 },
-        { name: 'Eclipse', level: 88 },
-        { name: 'VS Code', level: 85 },
-        { name: 'JIRA', level: 92 }
+        { name: 'VS Code', level: 90 },
+        { name: 'JIRA', level: 90 },
+        { name: 'Zephyr', level: 90 },
+        { name: 'JMETER', level: 50 },
+         { name: 'OSWAP', level: 50 }        
       ],
       color: 'tech-teal'
     }

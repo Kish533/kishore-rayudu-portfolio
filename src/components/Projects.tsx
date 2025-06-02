@@ -6,31 +6,31 @@ import { Badge } from '@/components/ui/badge';
 const Projects = () => {
   const projects = [
     {
-      title: 'E-Commerce Automation Suite',
-      description: 'Comprehensive Selenium WebDriver framework with TestNG, featuring data-driven testing, parallel execution, and detailed reporting.',
-      technologies: ['Java', 'Selenium', 'TestNG', 'Maven', 'Allure Reports'],
-      highlights: ['Cross-browser testing', 'CI/CD Integration', 'Page Object Model'],
+      title: 'Automation Suite',
+      description: 'Comprehensive Selenium WebDriver framework with Maven and TestNG, featuring data-driven testing, parallel execution, and detailed reporting.',
+      technologies: ['Java', 'Selenium', 'TestNG', 'Maven', 'Allure Reports', 'Jenkins', 'Azure Git', 'GitHub Actions'],
+      highlights: ['Cross-browser testing', 'CI/CD Integration', 'Page Object Model','Data-driven testing', 'Parallel execution', 'Detailed reporting'],
       gradient: 'from-tech-blue to-tech-teal'
     },
     {
       title: 'API Testing Framework',
       description: 'Rest Assured based framework for comprehensive API testing with automated validation, authentication handling, and performance testing.',
       technologies: ['Java', 'Rest Assured', 'TestNG', 'JSON Schema', 'Jenkins'],
-      highlights: ['OAuth 2.0 Testing', 'Response Validation', 'Load Testing'],
+      highlights: ['OAuth 2.0 Testing', 'Response Validation', 'HTTP Requests'],
       gradient: 'from-tech-teal to-tech-purple'
     },
     {
       title: 'Mobile App Test Automation',
       description: 'Appium-based mobile testing framework supporting both Android and iOS platforms with cloud device integration.',
-      technologies: ['Java', 'Appium', 'TestNG', 'BrowserStack', 'Sauce Labs'],
+      technologies: ['Java', 'Appium', 'TestNG', 'BrowserStack', 'Sauce Labs', 'Maven', 'Pcloudy'],
       highlights: ['Cross-platform testing', 'Cloud integration', 'Real device testing'],
       gradient: 'from-tech-purple to-tech-orange'
     },
     {
       title: 'BDD Cucumber Framework',
-      description: 'Behavior-driven development framework using Cucumber with Serenity for living documentation and stakeholder collaboration.',
-      technologies: ['Java', 'Cucumber', 'Serenity', 'Gherkin', 'Maven'],
-      highlights: ['Living documentation', 'Stakeholder reports', 'Feature-driven testing'],
+      description: 'Behavior-driven development framework using Cucumber with Serenity for application automation and reporting',
+      technologies: ['Java', 'Cucumber', 'Serenity', 'JBehaves', 'Maven'],
+      highlights: ['Page Object Models', 'Allure reports', 'Feature-driven testing'],
       gradient: 'from-tech-orange to-tech-blue'
     }
   ];
