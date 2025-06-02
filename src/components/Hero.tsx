@@ -45,7 +45,7 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center relative px-4 pt-20">
       <div className="max-w-4xl mx-auto text-center animate-fade-in">
         <div className="mb-8">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
+          <h1 className="text-5xl md:text-7xl font-bold mb-5">
             <span className="gradient-text">Test Automation</span>
             <br />
             <span className="text-white">Wizard</span>
