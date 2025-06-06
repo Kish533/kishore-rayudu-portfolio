@@ -3,7 +3,6 @@ import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Calendar, MapPin, TrendingUp } from 'lucide-react';
-import Image from 'next/image';
 
 const Experience = () => {
   const experiences = [
@@ -99,7 +98,7 @@ const Experience = () => {
     }
   ];
 
-  const certifications = [
+   const certifications = [
     {
       title: 'ISTQB Certified Tester – Advanced Level Test Automation Engineer (CTAL-TAE)',
       image: '/certificates/istqb-tae.png',
@@ -206,7 +205,7 @@ const Experience = () => {
                   className="flex items-center space-x-4 p-3 rounded-lg hover:bg-gray-800/50 transition-colors"
                 >
                   <div className="w-16 h-16 relative flex-shrink-0">
-                    <Image
+                    <img
                       src={cert.image}
                       alt={cert.title}
                       width={64}
