@@ -1,10 +1,12 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Calendar, MapPin, TrendingUp } from 'lucide-react';
 
 const Experience = () => {
+  const [selectedCert, setSelectedCert] = useState(null);
+
   const experiences = [
     {
       title: 'Senior QA Automation Engineer',
@@ -202,7 +204,8 @@ const Experience = () => {
               {certifications.map((cert) => (
                 <div
                   key={cert.title}
-                  className="flex items-center space-x-4 p-3 rounded-lg hover:bg-gray-800/50 transition-colors"
+                  onClick={() => setSelectedCert(cert)}
+                  className="flex items-center space-x-4 p-3 rounded-lg hover:bg-gray-800/50 transition-colors cursor-pointer"
                 >
                   <div className="w-16 h-16 relative flex-shrink-0">
                     <img
@@ -246,6 +249,32 @@ const Experience = () => {
             </div>
           </CardContent>
         </Card>
+
+        {/* Modal for Certificate Preview */}
+        {selectedCert && (
+          <div
+            className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
+            onClick={() => setSelectedCert(null)}
+          >
+            <div
+              className="bg-gray-900 p-6 rounded-lg relative max-w-xl w-full"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                className="absolute top-2 right-2 text-gray-400 hover:text-white text-xl"
+                onClick={() => setSelectedCert(null)}
+              >
+                ✕
+              </button>
+              <h3 className="text-white text-lg font-semibold mb-4">{selectedCert.title}</h3>
+              <img
+                src={selectedCert.image}
+                alt={selectedCert.title}
+                className="w-full object-contain rounded"
+              />
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );
