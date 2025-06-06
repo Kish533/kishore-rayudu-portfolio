@@ -3,6 +3,7 @@ import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Calendar, MapPin, TrendingUp } from 'lucide-react';
+import Image from 'next/image';
 
 const Experience = () => {
   const experiences = [
@@ -102,13 +103,33 @@ const Experience = () => {
     }
   ];
 
-  const certifications = [
-    'ISTQB Certified Tester – Advanced Level Test Automation Engineer (CTAL-TAE)',
-    'ISTQB Foundation Level Certification (CTFL)',
-    'AWS Certified Developer – Associate',
-    'Azure Administrator Associate',
-    'Lean Six Sigma – Certified White Belt'
-  ];
+ const certifications = [
+  {
+    title: 'ISTQB Certified Tester – Advanced Level Test Automation Engineer (CTAL-TAE)',
+    image: '/certificates/istqb-tae.png',
+    date: '2024'
+  },
+  {
+    title: 'ISTQB Foundation Level Certification (CTFL)',
+    image: '/certificates/istqb-foundation.png',
+    date: '2023'
+  },
+  {
+    title: 'AWS Certified Developer – Associate',
+    image: '/certificates/aws-developer.png',
+    date: '2024'
+  },
+  {
+    title: 'Azure Administrator Associate',
+    image: '/certificates/azure-admin.png',
+    date: '2023'
+  },
+  {
+    title: 'Lean Six Sigma – Certified White Belt',
+    image: '/certificates/six-sigma.png',
+    date: '2023'
+  }
+];
 
   return (
     <section id="experience" className="py-20 px-4">
@@ -181,23 +202,39 @@ const Experience = () => {
           ))}
         </div>
 
-        {/* Certifications & Stats Section */}
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
-          <Card className="glass border-gray-700">
-            <CardHeader>
-              <CardTitle className="text-tech-orange">Certifications</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-3">
-                {certifications.map((cert) => (
-                  <div key={cert} className="flex items-center">
-                    <span className="w-3 h-3 bg-tech-purple rounded-full mr-3"></span>
-                    <span className="text-gray-300">{cert}</span>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
+        <Card className="glass border-gray-700">
+  <CardHeader>
+    <CardTitle className="text-tech-orange">Certifications</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <div className="grid gap-6">
+      {certifications.map((cert) => (
+        <div 
+          key={cert.title} 
+          className="flex items-center space-x-4 p-3 rounded-lg hover:bg-gray-800/50 transition-colors"
+        >
+          <div className="relative w-16 h-16 flex-shrink-0">
+            <Image
+              src={cert.image}
+              alt={cert.title}
+              fill
+              className="object-contain rounded-lg"
+              sizes="(max-width: 768px) 64px, 64px"
+            />
+          </div>
+          <div className="flex-1">
+            <div className="text-gray-300 font-medium">
+              {cert.title}
+            </div>
+            <div className="text-sm text-gray-500">
+              Achieved: {cert.date}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </CardContent>
+</Card>
 
           <Card className="glass border-gray-700">
             <CardHeader>
