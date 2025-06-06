@@ -1,6 +1,5 @@
-
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Code, TestTube, Briefcase, Mail } from 'lucide-react';
+import { Menu, X, Code, TestTube, Briefcase, Mail, Award } from 'lucide-react'; // ⬅️ Added Award icon
 import { Button } from '@/components/ui/button';
 
 const Navigation = () => {
@@ -57,6 +56,13 @@ const Navigation = () => {
               <span>Experience</span>
             </button>
             <button 
+              onClick={() => scrollToSection('certifications')}
+              className="flex items-center space-x-2 hover:text-tech-green transition-colors"
+            >
+              <Award size={18} />
+              <span>Certifications</span>
+            </button>
+            <button 
               onClick={() => scrollToSection('contact')}
               className="flex items-center space-x-2 hover:text-tech-orange transition-colors"
             >
@@ -100,6 +106,13 @@ const Navigation = () => {
               >
                 <Briefcase size={18} />
                 <span>Experience</span>
+              </button>
+              <button 
+                onClick={() => scrollToSection('certifications')}
+                className="flex items-center space-x-2 hover:text-tech-green transition-colors text-left"
+              >
+                <Award size={18} />
+                <span>Certifications</span>
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
