@@ -11,7 +11,7 @@ const Hero = () => {
     }
   };
 
-  // ...existing handlers...
+  // ...existing handlers...cer
   const handleResumeDownload = () => {
     try {
       const link = document.createElement('a');

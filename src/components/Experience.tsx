@@ -118,7 +118,7 @@ const Experience = () => {
     },
     {
       title: 'Azure Administrator Associate',
-      image: '/certificates/azure-admin.png',
+      image: '/certificates/azure-.png',
       date: '2023'
     },
     {
@@ -195,36 +195,39 @@ const Experience = () => {
           ))}
         </div>
 
-        <Card className="glass border-gray-700">
-          <CardHeader>
-            <CardTitle className="text-tech-orange">Certifications</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="grid gap-6">
-              {certifications.map((cert) => (
-                <div
-                  key={cert.title}
-                  onClick={() => setSelectedCert(cert)}
-                  className="flex items-center space-x-4 p-3 rounded-lg hover:bg-gray-800/50 transition-colors cursor-pointer"
-                >
-                  <div className="w-16 h-16 relative flex-shrink-0">
-                    <img
-                      src={cert.image}
-                      alt={cert.title}
-                      width={64}
-                      height={64}
-                      className="object-contain rounded-lg"
-                    />
-                  </div>
-                  <div className="flex-1">
-                    <div className="text-gray-300 font-medium">{cert.title}</div>
-                    <div className="text-sm text-gray-500">Achieved: {cert.date}</div>
-                  </div>
-                </div>
-              ))}
+      <div id="certifications">
+  <Card className="glass border-gray-700">
+    <CardHeader>
+      <CardTitle className="text-tech-orange">Certifications</CardTitle>
+    </CardHeader>
+    <CardContent>
+      <div className="grid gap-6">
+        {certifications.map((cert) => (
+          <div
+            key={cert.title}
+            onClick={() => setSelectedCert(cert)}
+            className="flex items-center space-x-4 p-3 rounded-lg hover:bg-gray-800/50 transition-colors cursor-pointer"
+          >
+            <div className="w-16 h-16 relative flex-shrink-0">
+              <img
+                src={cert.image}
+                alt={cert.title}
+                width={64}
+                height={64}
+                className="object-contain rounded-lg"
+              />
             </div>
-          </CardContent>
-        </Card>
+            <div className="flex-1">
+              <div className="text-gray-300 font-medium">{cert.title}</div>
+              <div className="text-sm text-gray-500">Achieved: {cert.date}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </CardContent>
+  </Card>
+</div>
+
 
         <Card className="glass border-gray-700 mt-12">
           <CardHeader>
