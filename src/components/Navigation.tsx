@@ -57,7 +57,7 @@ const Navigation = () => {
             </button>
             <button 
               onClick={() => scrollToSection('certifications')}
-              className="flex items-center space-x-2 hover:text-tech-green transition-colors"
+              className="flex items-center space-x-2 hover:text-green-500  transition-colors"
             >
               <Award size={18} />
               <span>Certifications</span>
