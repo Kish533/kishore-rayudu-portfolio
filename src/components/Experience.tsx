@@ -230,7 +230,7 @@ const Experience = () => {
         </div>
 
         {/* Education */}
-        <Card className="glass border-gray-700 mt-12">
+        <Card className="glass border-cyan-700 mt-12">
           <CardHeader>
             <CardTitle className="text-tech-green">Education</CardTitle>
           </CardHeader>
