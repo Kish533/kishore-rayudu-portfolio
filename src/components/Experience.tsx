@@ -109,7 +109,7 @@ const Experience = () => {
     {
       title: 'ISTQB Foundation Level Certification (CTFL)',
       image: '/certificates/istqb-foundation.png',
-      date: '2023'
+      date: '2024'
     },
     {
       title: 'AWS Certified Developer – Associate',
@@ -119,12 +119,12 @@ const Experience = () => {
     {
       title: 'Azure Administrator Associate',
       image: '/certificates/azure-dev.png',
-      date: '2023'
+      date: '2025'
     },
     {
       title: 'Lean Six Sigma – Certified White Belt',
       image: '/certificates/six-sigma.png',
-      date: '2023'
+      date: '2024'
     }
   ];
 
