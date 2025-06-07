@@ -100,7 +100,12 @@ const Experience = () => {
     }
   ];
 
-   const certifications = [
+  const certifications = [
+    {
+      title: 'Azure Administrator Associate',
+      image: '/certificates/azure-dev.png',
+      date: '2025'
+    },
     {
       title: 'ISTQB Certified Tester – Advanced Level Test Automation Engineer (CTAL-TAE)',
       image: '/certificates/istqb-tae.png',
@@ -115,11 +120,6 @@ const Experience = () => {
       title: 'AWS Certified Developer – Associate',
       image: '/certificates/aws-developer.png',
       date: '2024'
-    },
-    {
-      title: 'Azure Administrator Associate',
-      image: '/certificates/azure-dev.png',
-      date: '2025'
     },
     {
       title: 'Lean Six Sigma – Certified White Belt',
@@ -195,40 +195,60 @@ const Experience = () => {
           ))}
         </div>
 
-      <div id="certifications">
-  <Card className="glass border-gray-700">
-    <CardHeader>
-      <CardTitle className="text-tech-orange">Certifications</CardTitle>
-    </CardHeader>
-    <CardContent>
-      <div className="grid gap-6">
-        {certifications.map((cert) => (
-          <div
-            key={cert.title}
-            onClick={() => setSelectedCert(cert)}
-            className="flex items-center space-x-4 p-3 rounded-lg hover:bg-gray-800/50 transition-colors cursor-pointer"
-          >
-            <div className="w-16 h-16 relative flex-shrink-0">
-              <img
-                src={cert.image}
-                alt={cert.title}
-                width={64}
-                height={64}
-                className="object-contain rounded-lg"
-              />
-            </div>
-            <div className="flex-1">
-              <div className="text-gray-300 font-medium">{cert.title}</div>
-              <div className="text-sm text-gray-500">Achieved: {cert.date}</div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </CardContent>
-  </Card>
-</div>
+        {/* Certifications */}
+        <div id="certifications">
+          <Card className="glass border-gray-700">
+            <CardHeader>
+              <CardTitle className="text-tech-orange">Certifications</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid gap-6">
+                {certifications.map((cert) => (
+                  <div
+                    key={cert.title}
+                    onClick={() => setSelectedCert(cert)}
+                    className="flex items-center space-x-4 p-3 rounded-lg hover:bg-gray-800/50 transition-colors cursor-pointer"
+                  >
+                    <div className="w-16 h-16 relative flex-shrink-0">
+                      <img
+                        src={cert.image}
+                        alt={cert.title}
+                        width={64}
+                        height={64}
+                        className="object-contain rounded-lg"
+                      />
+                    </div>
+                    <div className="flex-1">
+                      <div className="text-gray-300 font-medium">{cert.title}</div>
+                      <div className="text-sm text-gray-500">Achieved: {cert.date}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        </div>
 
+        {/* Education */}
+        <Card className="glass border-gray-700 mt-12">
+          <CardHeader>
+            <CardTitle className="text-tech-green">Education</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-6">
+            <div>
+              <h4 className="text-white font-semibold">Master of Computer Applications</h4>
+              <p className="text-gray-300">Vignan University - Guntur</p>
+              <p className="text-sm text-gray-500">2024 - Present</p>
+            </div>
+            <div>
+              <h4 className="text-white font-semibold">Bachelor of Technology</h4>
+              <p className="text-gray-300">Jawaharlal Nehru Technological University, Kakinada</p>
+              <p className="text-sm text-gray-500">2012 - 2016</p>
+            </div>
+          </CardContent>
+        </Card>
 
+        {/* Quick Stats */}
         <Card className="glass border-gray-700 mt-12">
           <CardHeader>
             <CardTitle className="text-tech-purple">Quick Stats</CardTitle>
@@ -253,7 +273,7 @@ const Experience = () => {
           </CardContent>
         </Card>
 
-        {/* Modal for Certificate Preview */}
+        {/* Certificate Preview Modal */}
         {selectedCert && (
           <div
             className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
