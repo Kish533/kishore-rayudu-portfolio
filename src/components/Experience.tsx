@@ -118,7 +118,7 @@ const Experience = () => {
     },
     {
       title: 'Azure Administrator Associate',
-      image: '/certificates/azure-.png',
+      image: '/certificates/azure-dev.png',
       date: '2023'
     },
     {
