@@ -87,14 +87,14 @@ const Experience = () => {
       location: 'Wayne, PA',
       period: 'Aug 2016 - Nov 2020',
       achievements: [
-        'Developed test automation frameworks using Selenium, Appium, TestNG, and Maven',
-        'Configured Azure CI/CD pipeline for automated test execution and integration',
-        'Created scalable mobile automation framework for Android, iOS, and hybrid',
-        'Collaborated with development teams to resolve bugs and improve testing',
-        'Designed comprehensive test plans and cases using Jira and JBehave',
-        'Enhanced automation scripts to improve efficiency and expand test coverage',
-        'Executed manual and automated tests ensuring quality and functionality',
-        'Collaborated in Agile teams to refine requirements and improve processes'
+        'Designed end-to-end test cases for B2B and B2C workflows',
+'Performed API testing using Postman for order and inventory services',
+'Automated regression tests using Selenium integrated with CI/CD pipelines',
+'Conducted manual testing for UI, UX, and cross-browser compatibility',
+'Validated ERP integration for order sync, invoicing, and inventory updates',
+'Tested AWS-hosted services including Lambda, S3, and CloudWatch monitoring',
+'Verified promotions, coupons, and loyalty programs across customer segments',
+'Participated in UAT and production validation for major eCommerce releases'
       ],
       technologies: ['Selenium WebDriver', 'Eclipse', 'Postman', 'Java', 'TestNG', 'SQL', 'Jira', 'Jenkins', 'GIT', 'Maven', 'TestNG']
     }
