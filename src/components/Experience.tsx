@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Calendar, MapPin, TrendingUp, Building2 } from 'lucide-react';
+import { Calendar, MapPin, TrendingUp, Building2, Shield } from 'lucide-react';
 
 const Experience = () => {
   const [selectedCert, setSelectedCert] = useState(null);
@@ -160,7 +160,7 @@ const Experience = () => {
                     <span className="font-semibold text-tech-purple">{exp.client}</span>
                   </div>
                   <div className="flex items-center">
-                    <TrendingUp className="mr-2" size={16} />
+                    <Shield className="mr-2" size={16} />
                     <span className="font-semibold text-tech-blue">{exp.company}</span>
                   </div>
                   <div className="flex items-center">
