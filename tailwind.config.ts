@@ -68,6 +68,7 @@ export default {
 				'tech-teal': '#14b8a6',
 				'tech-purple': '#8b5cf6',
 				'tech-orange': '#f97316',
+				'tech-green': '#097969',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

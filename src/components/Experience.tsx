@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Calendar, MapPin, TrendingUp } from 'lucide-react';
+import { Calendar, MapPin, TrendingUp, Building2 } from 'lucide-react';
 
 const Experience = () => {
   const [selectedCert, setSelectedCert] = useState(null);
@@ -23,9 +23,10 @@ const Experience = () => {
     },
     {
       title: 'QA Automation Engineer',
-      company: 'CVS',
-      location: 'Helius Compu-tech Pvt Ltd – Hyderabad - India',
+      company: 'Helius Compu-tech',
+      location: 'Hyderabad, India',
       period: 'Nov 2024 - April 2025',
+      client:'CVS (Irving, TX)',
       achievements: [
         'Established QA processes and testing standards from ground up',
         'Created comprehensive test documentation and test cases',
@@ -36,9 +37,10 @@ const Experience = () => {
     },
     {
       title: 'Sr. Automation Test Engineer',
-      company: 'Staffice Global Pvt Ltd ',
-      location: 'Chennai - India',
+      company: 'Staffice Global',
+      location: 'Hyderabad, India',
       period: 'Sep 2023 - Aug 2024',
+      client:'Anthem (Plano,TX)',
       achievements: [
         'Developed test automation frameworks using Selenium, Appium, TestNG, and Maven',
         'Configured Azure CI/CD pipeline for automated test execution and integration',
@@ -54,8 +56,9 @@ const Experience = () => {
     {
       title: 'Sr. Software Test Engineer',
       company: 'Inovalon',
-      location: 'Hyderabad - India',
+      location: 'Hyderabad, India',
       period: 'Mar 2023 - Aug 2023',
+      client:'Scriptmed (Bowie, MD)',
       achievements: [
         'Reviewed requirements, participated in sprint planning, stand-ups, and Scrum ceremonies',
         'Developed end-to-end test cases within Agile software development lifecycle',
@@ -66,9 +69,10 @@ const Experience = () => {
     },
     {
       title: 'Sr. Associate - Software Services',
-      company: 'Freyr Solutions',
-      location: 'Hyderabad - India',
+      company: 'Freyr Solutions', 
+      location: 'Hyderabad, India',
       period: 'Feb 2021 - Feb 2023',
+      client:'KonnectCo (Princeton, NJ)',
       achievements: [
         'Developed test automation frameworks using Selenium, Appium, TestNG, and Maven',
         'Configured Azure CI/CD pipeline for automated test execution and integration',
@@ -84,7 +88,8 @@ const Experience = () => {
     {
       title: 'Sr. Automation Test Engineer',
       company: 'Unilog',
-      location: 'Mysore - India',
+      location: 'Mysore, India',
+      client: 'Texas Plumbing Supply (Austin, TX)',
       period: 'Aug 2016 - Nov 2020',
       achievements: [
         'Designed end-to-end test cases for B2B and B2C workflows',
@@ -150,6 +155,10 @@ const Experience = () => {
               <CardHeader>
                 <CardTitle className="text-white text-xl mb-2">{exp.title}</CardTitle>
                 <div className="flex flex-wrap items-center gap-4 text-gray-300">
+                  <div className="flex items-center">
+                    <Building2  className="mr-2" size={16} />
+                    <span className="font-semibold text-tech-purple">{exp.client}</span>
+                  </div>
                   <div className="flex items-center">
                     <TrendingUp className="mr-2" size={16} />
                     <span className="font-semibold text-tech-blue">{exp.company}</span>
