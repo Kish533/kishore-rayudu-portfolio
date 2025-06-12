@@ -24,7 +24,7 @@ const Experience = () => {
     {
       title: 'QA Automation Engineer',
       company: 'CVS',
-      location: 'Irving, TX',
+      location: 'Helius Compu-tech Pvt Ltd – Hyderabad - India',
       period: 'Nov 2024 - April 2025',
       achievements: [
         'Established QA processes and testing standards from ground up',
@@ -36,8 +36,8 @@ const Experience = () => {
     },
     {
       title: 'Sr. Automation Test Engineer',
-      company: 'Anthem',
-      location: 'Plano, TX',
+      company: 'Staffice Global Pvt Ltd ',
+      location: 'Chennai - India',
       period: 'Sep 2023 - Aug 2024',
       achievements: [
         'Developed test automation frameworks using Selenium, Appium, TestNG, and Maven',
@@ -54,7 +54,7 @@ const Experience = () => {
     {
       title: 'Sr. Software Test Engineer',
       company: 'Inovalon',
-      location: 'Bowie, MD',
+      location: 'Hyderabad - India',
       period: 'Mar 2023 - Aug 2023',
       achievements: [
         'Reviewed requirements, participated in sprint planning, stand-ups, and Scrum ceremonies',
@@ -67,7 +67,7 @@ const Experience = () => {
     {
       title: 'Sr. Associate - Software Services',
       company: 'Freyr Solutions',
-      location: 'Princeton, NJ',
+      location: 'Hyderabad - India',
       period: 'Feb 2021 - Feb 2023',
       achievements: [
         'Developed test automation frameworks using Selenium, Appium, TestNG, and Maven',
@@ -84,7 +84,7 @@ const Experience = () => {
     {
       title: 'Sr. Automation Test Engineer',
       company: 'Unilog',
-      location: 'Wayne, PA',
+      location: 'Mysore - India',
       period: 'Aug 2016 - Nov 2020',
       achievements: [
         'Designed end-to-end test cases for B2B and B2C workflows',
