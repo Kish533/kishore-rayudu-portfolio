@@ -8,7 +8,7 @@ import emailjs from '@emailjs/browser';
 
 // Constants
 const GITHUB_URL = "https://github.com/Kish533";
-const LINKEDIN_URL = "https://www.linkedin.com/in/kishore-rayudu-qa";
+const LINKEDIN_URL = "https://www.linkedin.com/in/kishore176/";
 
 // EmailJS Configuration
 const EMAIL_CONFIG = {

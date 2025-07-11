@@ -32,7 +32,7 @@ const Hero = () => {
   };
 
   const handleLinkedInClick = () => {
-    window.open('https://www.linkedin.com/in/kishore-rayudu-qa', '_blank');
+    window.open('https://www.linkedin.com/in/kishore176/', '_blank');
   };
 
   const handleEmailClick = () => {
@@ -105,7 +105,7 @@ const Hero = () => {
               </Button>
             </HoverCardTrigger>
             <HoverCardContent className="w-auto p-2 bg-gray-800 border-gray-600">
-              <p className="text-sm text-white">https://www.linkedin.com/in/kishore-rayudu-qa</p>
+              <p className="text-sm text-white">https://www.linkedin.com/in/kishore176/</p>
             </HoverCardContent>
           </HoverCard>
 

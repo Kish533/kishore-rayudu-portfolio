@@ -262,22 +262,24 @@ const Experience = () => {
           <CardHeader>
             <CardTitle className="text-tech-purple">Quick Stats</CardTitle>
           </CardHeader>
-          <CardContent className="space-y-4">
-            <div className="text-center">
-              <div className="text-3xl font-bold gradient-text">8+</div>
-              <div className="text-gray-300">Years Experience</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold gradient-text">10+</div>
-              <div className="text-gray-300">Developed Automation Frameworks</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold gradient-text">5000+</div>
-              <div className="text-gray-300">Test Cases Migrated</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold gradient-text">90%</div>
-              <div className="text-gray-300">Test Coverage Achieved</div>
+          <CardContent>
+            <div className="grid grid-cols-2 gap-6">
+              <div className="text-center">
+                <div className="text-3xl font-bold gradient-text">8+</div>
+                <div className="text-gray-300">Years Experience</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold gradient-text">10+</div>
+                <div className="text-gray-300">Developed Automation Frameworks</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold gradient-text">5000+</div>
+                <div className="text-gray-300">Test Cases Migrated</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold gradient-text">90%</div>
+                <div className="text-gray-300">Test Coverage Achieved</div>
+              </div>
             </div>
           </CardContent>
         </Card>
