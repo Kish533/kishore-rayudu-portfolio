@@ -10,8 +10,8 @@ const Experience = () => {
   const experiences = [
     {
       title: 'Senior QA Automation Engineer',
-      company: 'State Farm',
-      location: 'McKinney, TX',
+      company: '7 Eleven',
+      location: 'Irving, TX',
       period: 'May 2025 - Present',
       achievements: [
         'Developed modular automation frameworks using Selenium, Appium, TestNG, and Java',
