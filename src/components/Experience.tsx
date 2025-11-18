@@ -26,7 +26,6 @@ const Experience = () => {
       company: 'Helius Compu-tech',
       location: 'Hyderabad, India',
       period: 'Nov 2024 - April 2025',
-      client:'CVS (Irving, TX)',
       achievements: [
         'Established QA processes and testing standards from ground up',
         'Created comprehensive test documentation and test cases',
@@ -40,7 +39,7 @@ const Experience = () => {
       company: 'Staffice Global',
       location: 'Hyderabad, India',
       period: 'Sep 2023 - Aug 2024',
-      client:'Anthem (Plano,TX)',
+      
       achievements: [
         'Developed test automation frameworks using Selenium, Appium, TestNG, and Maven',
         'Configured Azure CI/CD pipeline for automated test execution and integration',
@@ -58,7 +57,7 @@ const Experience = () => {
       company: 'Inovalon',
       location: 'Hyderabad, India',
       period: 'Mar 2023 - Aug 2023',
-      client:'Scriptmed (Bowie, MD)',
+     
       achievements: [
         'Reviewed requirements, participated in sprint planning, stand-ups, and Scrum ceremonies',
         'Developed end-to-end test cases within Agile software development lifecycle',
@@ -72,7 +71,7 @@ const Experience = () => {
       company: 'Freyr Solutions', 
       location: 'Hyderabad, India',
       period: 'Feb 2021 - Feb 2023',
-      client:'KonnectCo (Princeton, NJ)',
+      
       achievements: [
         'Developed test automation frameworks using Selenium, Appium, TestNG, and Maven',
         'Configured Azure CI/CD pipeline for automated test execution and integration',
@@ -89,7 +88,6 @@ const Experience = () => {
       title: 'Sr. Automation Test Engineer',
       company: 'Unilog',
       location: 'Mysore, India',
-      client: 'Texas Plumbing Supply (Austin, TX)',
       period: 'Aug 2016 - Nov 2020',
       achievements: [
         'Designed end-to-end test cases for B2B and B2C workflows',

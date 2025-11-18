@@ -32,7 +32,7 @@ const Hero = () => {
   };
 
   const handleLinkedInClick = () => {
-    window.open('https://www.linkedin.com/in/kishore176/', '_blank');
+    window.open('https://www.linkedin.com/in/kishore5335/', '_blank');
   };
 
   const handleEmailClick = () => {
@@ -105,7 +105,7 @@ const Hero = () => {
               </Button>
             </HoverCardTrigger>
             <HoverCardContent className="w-auto p-2 bg-gray-800 border-gray-600">
-              <p className="text-sm text-white">https://www.linkedin.com/in/kishore176/</p>
+              <p className="text-sm text-white">https://www.linkedin.com/in/kishore5335/</p>
             </HoverCardContent>
           </HoverCard>
 
@@ -122,7 +122,7 @@ const Hero = () => {
             </HoverCardTrigger>
             <HoverCardContent className="w-auto p-3 bg-gray-800 border-gray-600">
               <div className="text-sm text-white space-y-1">
-                <p>kishorerayuduqa@gmail.com</p>
+                <p>kishorerayudu1995@gmail.com</p>
                 <p>+1 (469)-525-3629</p>
               </div>
             </HoverCardContent>
@@ -171,18 +171,23 @@ const Hero = () => {
       {/* Floating tech icons */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 animate-float">
-          <div className="w-16 h-16 bg-tech-blue/20 rounded-lg flex items-center justify-center">
-            <span className="text-tech-blue font-bold">Java</span>
+          <div className="w-16 h-16 bg-amber-500/20 rounded-lg flex items-center justify-center">
+            <span className="text-amber-400 font-bold">Java</span>
           </div>
         </div>
         <div className="absolute top-1/3 right-1/4 animate-float" style={{ animationDelay: '1s' }}>
-          <div className="w-16 h-16 bg-tech-teal/20 rounded-lg flex items-center justify-center">
-            <span className="text-tech-teal font-bold">Python</span>
+          <div className="w-20 h-16 bg-emerald-500/20 rounded-lg flex items-center justify-center">
+            <span className="text-emerald-400 font-bold text-sm">Selenium</span>
           </div>
         </div>
         <div className="absolute bottom-1/3 left-1/3 animate-float" style={{ animationDelay: '2s' }}>
-          <div className="w-16 h-16 bg-tech-purple/20 rounded-lg flex items-center justify-center">
-            <span className="text-tech-purple font-bold">JS</span>
+          <div className="w-20 h-16 bg-violet-500/20 rounded-lg flex items-center justify-center">
+            <span className="text-violet-400 font-bold text-xs">RestAPI</span>
+          </div>
+        </div>
+        <div className="absolute bottom-1/3 right-1/3 animate-float" style={{ animationDelay: '3s' }}>
+          <div className="w-16 h-16 bg-cyan-500/20 rounded-lg flex items-center justify-center">
+            <span className="text-cyan-400 font-bold text-sm">APPIUM</span>
           </div>
         </div>
       </div>

@@ -8,14 +8,14 @@ import emailjs from '@emailjs/browser';
 
 // Constants
 const GITHUB_URL = "https://github.com/Kish533";
-const LINKEDIN_URL = "https://www.linkedin.com/in/kishore176/";
+const LINKEDIN_URL = "https://www.linkedin.com/in/kishore5335/";
 
 // EmailJS Configuration
 const EMAIL_CONFIG = {
   SERVICE_ID: 'service_e1kxl6g',
   TEMPLATE_ID: 'template_3ejmqz8',
   PUBLIC_KEY: 'MTcU0R5ZeRJObYXgu',
-  TO_EMAIL: 'kishorerayuduqa@gmail.com'
+  TO_EMAIL: 'kishorerayudu1995@gmail.com'
 };
 
 const Contact = () => {
