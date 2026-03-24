@@ -8,14 +8,14 @@ import emailjs from '@emailjs/browser';
 
 // Constants
 const GITHUB_URL = "https://github.com/Kish533";
-const LINKEDIN_URL = "https://www.linkedin.com/in/kishore5335/";
+const LINKEDIN_URL = "https://www.linkedin.com/in/kishore-rayudu-qa";
 
 // EmailJS Configuration
 const EMAIL_CONFIG = {
   SERVICE_ID: 'service_e1kxl6g',
   TEMPLATE_ID: 'template_3ejmqz8',
   PUBLIC_KEY: 'MTcU0R5ZeRJObYXgu',
-  TO_EMAIL: 'kishorerayudu1995@gmail.com'
+  TO_EMAIL: 'kishorerayuduqa@gmail.com'
 };
 
 const Contact = () => {
@@ -78,9 +78,9 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-4 bg-black/20">
+    <section id="contact" className="py-12 px-4 bg-black/20">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="gradient-text">Let's Connect</span>
           </h2>

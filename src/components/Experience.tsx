@@ -14,12 +14,12 @@ const Experience = () => {
       location: 'Irving, TX',
       period: 'May 2025 - Present',
       achievements: [
-        'Developed modular automation frameworks using Selenium, Appium, TestNG, and Java',
+        'Developed modular automation frameworks using Selenium, Appium, TestNG, Rest Assured, and Java',
         'Implemented CI/CD pipelines with Jenkins and GitHub Actions',
         'Tested REST APIs using Postman; validated backend data with SQL',
         'Participated in Agile ceremonies; mentored juniors; improved QA best practices'
       ],
-      technologies: ['Java', 'Selenium WebDriver', 'Serenity BDD', 'Appium', 'IOS', 'Android', 'JIRA', 'Zephyr', 'Cucumber','Agile', 'IntelliJ', 'Maven', 'Jenkins', 'CI/CD','Jenkins', 'Git', 'BDD', 'Browser Stack', 'DBeaver']
+      technologies: ['Java', 'Selenium WebDriver', 'Cucumber', 'Appium', 'TestNG', 'iOS', 'Android', 'New Relic', 'Kibana', 'Mixpanel', 'AWS Lambda', 'SQL', 'Jenkins', 'GitHub Actions', 'Postman', 'GitHub Copilot', 'Windsurf', 'Agile/Scrum', 'JIRA']
     },
     {
       title: 'QA Automation Engineer',
@@ -132,9 +132,9 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 px-4">
+    <section id="experience" className="py-12 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="gradient-text">Professional Journey</span>
           </h2>

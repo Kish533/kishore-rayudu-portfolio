@@ -32,7 +32,7 @@ const Hero = () => {
   };
 
   const handleLinkedInClick = () => {
-    window.open('https://www.linkedin.com/in/kishore5335/', '_blank');
+    window.open('https://www.linkedin.com/in/kishore-rayudu-qa', '_blank');
   };
 
   const handleEmailClick = () => {
@@ -40,7 +40,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative px-4 pt-20">
+    <section className="min-h-[85vh] flex items-center justify-center relative px-4 pt-20">
       <div className="max-w-4xl mx-auto text-center animate-fade-in">
         <div className="mb-8">
           <h1 className="text-5xl md:text-7xl font-bold mb-5">
@@ -105,7 +105,7 @@ const Hero = () => {
               </Button>
             </HoverCardTrigger>
             <HoverCardContent className="w-auto p-2 bg-gray-800 border-gray-600">
-              <p className="text-sm text-white">https://www.linkedin.com/in/kishore5335/</p>
+              <p className="text-sm text-white">https://www.linkedin.com/in/kishore-rayudu-qa</p>
             </HoverCardContent>
           </HoverCard>
 
@@ -122,7 +122,7 @@ const Hero = () => {
             </HoverCardTrigger>
             <HoverCardContent className="w-auto p-3 bg-gray-800 border-gray-600">
               <div className="text-sm text-white space-y-1">
-                <p>kishorerayudu1995@gmail.com</p>
+                <p>kishorerayuduqa@gmail.com</p>
                 <p>+1 (469)-525-3629</p>
               </div>
             </HoverCardContent>
